@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="15dp" 
+    android:text="这是主程序" 
+    android:gravity="center_horizontal"
+    />
+    
+    <org.igeek.plugintest.main.WorkSpace
+    	android:layout_marginTop="15dp"
+    	android:id="@+id/main_wkMain"
+	    android:layout_height="400dp"
+   		android:layout_width="fill_parent"
+    
+    />
+    <CheckBox
+    	android:id="@+id/main_chbAttachMain"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="是否附加为view"
+    />
+    <Button 
+   		android:layout_marginTop="40dp"
+    	android:id="@+id/main_btnFindPlugins"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="查找插件"
+    	/>
+    <LinearLayout 
+    	android:layout_alignParentBottom="true"
+    	android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/main_llMainLayout"
+    	
+    	>
+	    <TextView 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="↓↓ 插件列表  ↓↓"
+	    	android:gravity="center_horizontal"
+	    	/>
+   	</LinearLayout>
+</RelativeLayout>
